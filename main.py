@@ -28,7 +28,7 @@ with st.form("nova_compra"):
             st.error("Orçamento Insuficiente")
 
 if orcamento > 0:
-    fig, ax = plt.subplots(figsize=(8, 8))
+    fig, ax = plt.subplot(figsize=(8, 8))
     produtos = dados["Produto"].tolist()
     valores = dados["Preço"].tolist()
 
